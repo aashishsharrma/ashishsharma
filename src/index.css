@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white overflow-x-hidden;
+}
+
+/* MAIN GLOW SYSTEM */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(168,85,247,0.35), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(99,102,241,0.25), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(168,85,247,0.2), transparent 50%);
+
+  filter: blur(120px);
+  opacity: 0.9;
+}
+
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slideLoop 12s linear infinite;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
