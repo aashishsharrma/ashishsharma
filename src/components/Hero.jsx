@@ -46,9 +46,9 @@ export default function Hero() {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-          We create content that performs.{" "}
+          We create content{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
-            performs.
+            that performs.
           </span>
         </h1>
 
